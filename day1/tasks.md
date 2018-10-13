@@ -18,6 +18,8 @@ minikube start
 
 ### Task 1: Starting the first pod
 
+Help: https://v1-10.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#pod-v1-core
+
 Run your very first nginx pod using kubectl
 
 ```sh
