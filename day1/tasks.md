@@ -22,6 +22,8 @@ minikube start
   - Describe such a pod configuration in a yaml file
   - Modify the pod definition and apply the changes
 
+Run your very first nginx pod using kubectl
+
 <details><summary>Show me how to run a pod</summary>
 <p>
 
