@@ -18,65 +18,35 @@ minikube start
 
 ### Task 1: Starting the first pod
 
-  - Run your very first nginx pod using kubectl
-
-<details><summary>Show me how to run a pod</summary>
-<p>
+Run your very first nginx pod using kubectl
 
 ```sh
 kubectl run --image=nginx nginx --port=80
 ```
 
-</p>
-</details>
-
-  - Using kubectl try to find all of the nginx pods that are running in the cluster.
-
-<details><summary>Show me how to search for pods</summary>
-<p>
+Using kubectl try to find all of the nginx pods that are running in the cluster.
 
 ```sh
 kubectl get pods
 ```
 
-</p>
-</details>
-
-  - Is it really a pod or kubectl does it differently than we assumed?
-
-<details><summary>Show me some hints</summary>
-<p>
+Is it really a pod or kubectl does it differently than we assumed?
 
 ```sh
 kubectl get deployments
 ```
 
-</p>
-</details>
-
-  - Delete the running pod.
-
-<details><summary>How to delete it? Hints</summary>
-<p>
+Delete the running pod.
 
 ```sh
 kubectl delete deployment/nginx
 ```
 
-</p>
-</details>
-
-  - Apply the pod from a static yaml file
-
-<details><summary>Show me how to apply the pod from file</summary>
-<p>
+Apply the pod from a static yaml file
 
 ```sh
 kubectl apply -f nginx-pod.yaml
 ```
-
-</p>
-</details>
 
 ### Task 2: Configure your pods
 
