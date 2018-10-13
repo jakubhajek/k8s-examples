@@ -4,6 +4,18 @@
 
 Withing the first day of the workshop you will be working with Minikube on some very basic configurations running single-container pods, multi-container pods. You will be also configuring them in many different possible ways. 
 
+### Task 0: Start the Minikube
+
+<details><summary>Show me how to do it</summary>
+<p>
+
+```sh
+minikube start
+```
+
+</p>
+</details>
+
 ### Task 1: Starting the first pod
 
   - Run the very first container running Nginx on port 80
@@ -12,16 +24,3 @@ Withing the first day of the workshop you will be working with Minikube on some 
 
 ### Task 2: Run a multi-container pod
 
-## collapsible markdown?
-
-<details><summary>CLICK ME</summary>
-<p>
-
-#### yes, even hidden code blocks!
-
-```sh
-print("hello world!")
-```
-
-</p>
-</details>
