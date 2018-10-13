@@ -91,11 +91,49 @@ Restart the pod and checkout the value of the env variables.
 
 ### Task 3: Run multiple containers in a single pod
 
+Try to run two containers in the same Pod:
+  - Nginx, port 80
+  - Nginx, port 880
+
+Set different env variables for both containers. Confirm that it is working as expected.
+
+Configure one configmap and one secret. Let your containers use both of them.
+
+Checkout how to connect from one container to another.
+
+Propose some of the use cases for such a setup and discuss it with your mentor.
+
+Kill the pod and check what is the status of the containers.
 
 ### Task 4: Run a job in Kubernetes
 
+Hint: https://v1-10.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#job-v1-batch
+
+Create a job that calculates pi to 2000 decimal points using the container with the image named perl and the following entry point to the container:
+
+```sh
+["perl",  "-Mbignum=bpi", "-wle", "print bpi(2000)"]
+```
+
+Read more about parallelism and check how it works. Discuss it with your mentor.
 
 ### Task 5: Working with the pods
 
+List all of the pods
+
+Get all of the details describing a multi-container pod
+
+List all of the containers of the multi-container pod
+
+Try to enter the shell of each container of the multi-container pod
+
+Get logs of particular containers from the multi-container pod
+
+Try to change the image for a running single pod with nginx by specifying a wrong value (not existing image), applying it.
+Check out what happened. How many containers are running? What is their configuration? Get the details about the pod.
 
 ### Task 6: Resolve the Nginx pod name to the IP address in the cluster
+
+Try to get the ClusterIP of the running single-container Pod. 
+
+Try to get it from the K8S node and from other containers. How does it work?
