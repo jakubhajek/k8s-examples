@@ -47,11 +47,47 @@ kubectl delete deployment/nginx
 Apply the pod from a static yaml file
 
 ```sh
-kubectl apply -f nginx-pod.yaml
+kubectl apply -f solutions/nginx-pod.yaml
 ```
 
 ### Task 2: Configure your pods
 
+Find in the documentation how to configure some env variables for containers defined in a pod.
+There is a hint below but try to find it on your own.
+
+Hint: https://v1-10.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#container-v1-core
+
+Try to prepare a new yaml file nginx-pod-env.yaml that will have two env variables:
+```sh
+HELLO=WORLD
+API=KEY
+```
+
+Discuss with other engineers the current approach. Do you think that such a solution is efficient and good enough?
+
+Create the very first secret for the API env variable:
+```sh
+kubectl create secret generic api --from-literal=API=KEY
+```
+
+Create the very first ConfigMap for the HELLO env variable:
+```sh
+kubectl create configmap hello --from-literal=HELLO=WORLD
+```
+
+Find a kubectl command to find all secrets that are configured
+
+Find a kubectl command to fild all configmaps that are configured
+
+Prepare a yaml file that uses the created secret and configmap
+
+Apply the yaml. Feel free to perform a dry-run for your command execution. (Hint: --dry-run)
+
+Try to remove the configmap and secret. Check out what is happening with your container/pod.
+
+Create the same configmaps and secrets but with some new values. Checkout what are the values in the running pod.
+
+Restart the pod and checkout the value of the env variables.
 
 ### Task 3: Run multiple containers in a single pod
 
