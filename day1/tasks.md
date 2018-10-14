@@ -145,3 +145,7 @@ Install siege in the running container and try to consume more RAM than the limi
 Discuss the limits and requests with your mentor.
 
 Try to set a very high requests value in your definition and check what happens. (higher than amount of memory in your VM)
+
+### Task 7: Readiness and Liveness probes
+
+Please configure a pod with command and http liveness checks. Please get familiar with the readiness example in solutions directory.
