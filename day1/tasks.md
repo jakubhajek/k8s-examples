@@ -133,3 +133,11 @@ Try to change the image for a running single pod with nginx by specifying a wron
 Check out what happened. How many containers are running? What is their configuration? Get the details about the pod.
 
 ### Task 6: Playing with Pod Limits and Requests
+
+Add resources definition to the nginx-pod declaration with 64MB of RAM and 0.25 of CPU and deploy it to Minikube.
+
+Install siege in the running container and try to consume more RAM than the limit defines. Check what happens.
+
+Discuss the limits and requests with your mentor.
+
+Try to set a very high requests value in your definition and check what happens. (higher than amount of memory in your VM)
