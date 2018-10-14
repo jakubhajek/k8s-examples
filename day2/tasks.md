@@ -90,21 +90,23 @@ Discuss the Ingress configuration with your mentor. When everything is clear rem
 
 - 13.1 Enable heapster addon
 - 13.2 Create a deployment with 2 Nginx Pods.
-- 13.3 Configure HPA (imperative) Add 1 
+- 13.3 Configure HPA (imperative) 
 - 13.4 Go through API reference and discuss how to configure HPA.
 
 ### Task 14: Namespaces
 
 - 14.1 Create a new namespace with a name app-ns
 - 14.2 Configure kubeconfig to use the new namespace. Prepare multiple contexts
-- 14.3 Attach some quotas for the namespace.
-- 14.4 Discuss some possible setups for your projects with mentor.
+- 14.3 Attach some quotas for the namespace. (i.e. request.cpu 1, requests.memory 1GB, limits.cpu 2, limits.memory 2GB)
+- 14.4 Attach LimitRage for the namespace
+- 14.5 Discuss some possible setups for your projects with mentor.
 
 ### Task 15: Volumes
 
-- 15.1 Create an EmptyDir to cache some data on the node and use it for a Nginx Pod.
+- 15.1 Create an EmptyDir to cache some data on the node and use it for a Nginx Pod. What could be some use cases for such a setup? Where is the data stored then?
 - 15.2 Use HostPath and mount some a /tmp/data directory to a Pod
 
 ### Task 16: StatefulSets
 
-Apply stateful-set.yaml and discuss it with your mentor.
+- 16.1 Apply 16.pv.yaml, 16.yaml and discuss it with your mentor.
+- 16.2 Try to scale out your statefulset to 3 replicas.
