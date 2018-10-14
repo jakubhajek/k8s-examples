@@ -132,8 +132,4 @@ Get logs of particular containers from the multi-container pod
 Try to change the image for a running single pod with nginx by specifying a wrong value (not existing image), applying it.
 Check out what happened. How many containers are running? What is their configuration? Get the details about the pod.
 
-### Task 6: Resolve the Nginx pod name to the IP address in the cluster
-
-Try to get the ClusterIP of the running single-container Pod. 
-
-Try to get it from the K8S node and from other containers. How does it work?
+### Task 6: Playing with Pod Limits and Requests
