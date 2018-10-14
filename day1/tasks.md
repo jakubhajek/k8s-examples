@@ -134,6 +134,10 @@ Check out what happened. How many containers are running? What is their configur
 
 ### Task 6: Playing with Pod Limits and Requests
 
+```sh
+minikube addons enable metrics-server
+```
+
 Add resources definition to the nginx-pod declaration with 64MB of RAM and 0.25 of CPU and deploy it to Minikube.
 
 Install siege in the running container and try to consume more RAM than the limit defines. Check what happens.
