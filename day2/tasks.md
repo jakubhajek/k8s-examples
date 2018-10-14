@@ -85,8 +85,13 @@ Remove the services and the deployments that were created.
 
 ### Task 12: Configure Ingress
 
-12.1 Configure two different backends of Nginx services
-12.2 Configure Ingress that sends requests going to /a to the first service and requests going to /b to the second service
+12.0 Enable ingress addon in Minikube
+12.1 Configure 3 different backends of Nginx services - service1 and service2 and the default service.
+12.2 Configure Ingress routing:
+     - first.test/ -> service1
+     - second.test/service1 -> service1
+     - second.test/service2 -> service2
+     - * -> default
 
 Discuss the Ingress configuration with your mentor. When everything is clear remove them and proceed with the training.
 
