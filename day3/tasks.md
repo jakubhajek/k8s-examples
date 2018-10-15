@@ -1,4 +1,4 @@
-# Day 2 - More abstraction
+# Day 3 - More abstraction
 
 ![N|Solid](https://www.stratoscale.com/wp-content/uploads/Kubernetes-logo.png)
 
