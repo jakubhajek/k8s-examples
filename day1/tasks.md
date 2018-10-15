@@ -148,4 +148,4 @@ Try to set a very high requests value in your definition and check what happens.
 
 ### Task 7: Readiness and Liveness probes
 
-Please configure a pod with command and http liveness checks. Please get familiar with the readiness example in solutions directory.
+Please configure a pod with command for readiness and liveness checks.
